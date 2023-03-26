@@ -1,0 +1,232 @@
+@import url(../css/fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans:wght@300&family=Lexend+Deca:wght@200&family=Livvic:wght@300&display=swap');
+@import url(../fonts/Marvel/American\ Captain.ttf);
+
+:root {
+
+/* -----------theme------------ */
+    --text-grey:#3f4954;
+    --red:#EC1D24;
+    --white:#FEFEFE;
+/* --------x--theme--x--------- */
+
+/* -------gradient---------*/
+
+    --sky:linear-gradient(120deg, #a1c4fd 0% , #317da0 100%);
+    
+
+/* -------x--gradient--x-------- */
+/* --------font---------- */
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic',cursive;
+    --Marvel:'Marvel',cursive;
+}
+/* --------x--font--x---------- */
+
+
+
+/* ----------global class-------------- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    animation: mymove 10s both;
+    animation-delay: 5s;
+}
+
+@keyframes mymove {
+    from {background-image: url(../assets/red-bg.png); opacity: 1; background-size: cover;}
+    to {background-image: url(../assets/thanos.bg2.jpg);
+    background-size: cover; opacity: 1;}
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: none;
+}
+
+
+/* ------x-----global class--------x------ */
+
+.rounded {
+    width: 30px;
+    height: 30px;
+    background-color: #EC1D24;
+    border-radius: 50%;
+}
+
+.logo {
+    margin-left: 110px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.flex-row .nav-items {
+    display: flex;
+    list-style-type: none;
+}
+
+.flex-row .nav-items .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FEFEFE;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.flex-row .nav-items .nav-links {
+    padding: 0.5rem;
+    margin-left: 20px;
+    margin-right: 80px;
+    font-size: 1.2rem;
+    position: relative;
+    font-family: var(--Abel);
+}
+
+.flex-row .nav-items .nav-linkd {
+    padding: 0.5rem;
+    margin-left: 200px;
+    font-size: 1.2rem;
+    position: relative;
+    font-family: var(--Abel);
+}
+
+.nav-linkd::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FEFEFE;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-linkd:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-links::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FEFEFE;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.text1 {
+    color: #FEFEFE;
+    font-family: Avengeance Heroic Avenger Bold;
+    font-size: 6rem;
+    padding-left: 130px;
+    float: left;
+}
+
+.list1 {
+    float: right;
+    margin-right:240px;
+    margin-top: 110px;
+    color: #EC1D24;
+}
+
+.link1 {
+    font-size: 1.7rem;
+    font-family: 'Avengeance Heroic Avenger Normal';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+    position: relative;
+}
+
+
+.link1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FEFEFE;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link1:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.social {
+    margin-top: 430px;
+    margin-left: 100px;
+}
+
+.social a {
+    padding: 0.2rem;
+}
+
+.social i{
+    padding: 0.5rem;
+    border: 0.7px solid rgb(173, 173, 172);
+    border-radius: 50%;
+}
+
+.social i:hover{
+    background-color: #EC1D24;
+}
+
+/* ---------page2----------- */
+
